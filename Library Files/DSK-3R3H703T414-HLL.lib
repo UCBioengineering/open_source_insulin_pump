@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# DSK-3R3H703T414-HLL
+#
+DEF DSK-3R3H703T414-HLL C 0 40 N N 1 L N
+F0 "C" -200 200 50 H V L BNN
+F1 "DSK-3R3H703T414-HLL" -200 -300 50 H V L BNN
+F2 "CAP_DSK-3R3H703T414-HLL" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "ELNA" 0 0 50 H I L BNN "MANUFACTURER"
+F5 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+DRAW
+A 133 0 174 1450 2150 0 0 10 N -10 100 -10 -100
+P 2 0 0 10 -40 0 100 0 N
+P 2 0 0 10 -200 0 -80 0 N
+P 2 0 0 10 -80 100 -80 -100 N
+S -146 -60 -111 -55 0 0 0 F
+S -131 -75 -126 -40 0 0 0 F
+X ~ + -200 0 0 R 40 40 0 0 P 
+X ~ - 100 0 0 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Insulin-Pump-PCB-Schematic-rescue)(type Legacy)(uri "${KIPRJMOD}/Insulin Pump PCB Schematic-rescue.lib")(options "")(descr ""))
+  (lib (name ADP1612ARMZ-R7)(type Legacy)(uri "//file/Usersm$/mgp57/Home/My Documents/PhD/Insulin Pump/Library Files/ADP1612ARMZ-R7.lib")(options "")(descr ""))
+  (lib (name Timer_RTC)(type Legacy)(uri "//file/Usersm$/mgp57/Home/My Documents/PhD/Insulin Pump/Library Files/Timer_RTC.lib")(options "")(descr ""))
+  (lib (name DS2710G_)(type Legacy)(uri "//file/Usersm$/mgp57/Home/My Documents/PhD/Insulin Pump/Library Files/DS2710G_.lib")(options "")(descr ""))
+  (lib (name IS25LP128F-JBLE)(type Legacy)(uri "//file/Usersm$/mgp57/Home/My Documents/PhD/Insulin Pump/Library Files/IS25LP128F-JBLE.lib")(options "")(descr ""))
+)

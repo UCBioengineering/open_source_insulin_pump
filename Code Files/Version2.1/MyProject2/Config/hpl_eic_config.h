@@ -357,28 +357,28 @@
 // <e> Interrupt 8 Settings
 // <id> eic_arch_enable_irq_setting8
 #ifndef CONF_EIC_ENABLE_IRQ_SETTING8
-#define CONF_EIC_ENABLE_IRQ_SETTING8 0
+#define CONF_EIC_ENABLE_IRQ_SETTING8 1
 #endif
 
 // <q> External Interrupt 8 Event Output Enable
 // <i> Indicates whether the external interrupt 8 event output is enabled or not
 // <id> eic_arch_extinteo8
 #ifndef CONF_EIC_EXTINTEO8
-#define CONF_EIC_EXTINTEO8 0
+#define CONF_EIC_EXTINTEO8 1
 #endif
 
 // <q> External Interrupt 8 Wake-up Enable
 // <i> Indicates whether the external interrupt 8 wake-up is enabled or not
 // <id> eic_arch_wakeupen8
 #ifndef CONF_EIC_WAKEUPEN8
-#define CONF_EIC_WAKEUPEN8 0
+#define CONF_EIC_WAKEUPEN8 1
 #endif
 
 // <q> External Interrupt 8 Filter Enable
 // <i> Indicates whether the external interrupt 8 filter is enabled or not
 // <id> eic_arch_filten8
 #ifndef CONF_EIC_FILTEN8
-#define CONF_EIC_FILTEN8 0
+#define CONF_EIC_FILTEN8 1
 #endif
 
 // <y> Input 8 Sense Configuration
@@ -391,7 +391,7 @@
 // <i> This defines input sense trigger
 // <id> eic_arch_sense8
 #ifndef CONF_EIC_SENSE8
-#define CONF_EIC_SENSE8 EIC_NMICTRL_NMISENSE_NONE_Val
+#define CONF_EIC_SENSE8 EIC_NMICTRL_NMISENSE_LOW_Val
 #endif
 // </e>
 
@@ -562,28 +562,28 @@
 // <e> Interrupt 13 Settings
 // <id> eic_arch_enable_irq_setting13
 #ifndef CONF_EIC_ENABLE_IRQ_SETTING13
-#define CONF_EIC_ENABLE_IRQ_SETTING13 0
+#define CONF_EIC_ENABLE_IRQ_SETTING13 1
 #endif
 
 // <q> External Interrupt 13 Event Output Enable
 // <i> Indicates whether the external interrupt 13 event output is enabled or not
 // <id> eic_arch_extinteo13
 #ifndef CONF_EIC_EXTINTEO13
-#define CONF_EIC_EXTINTEO13 0
+#define CONF_EIC_EXTINTEO13 1
 #endif
 
 // <q> External Interrupt 13 Wake-up Enable
 // <i> Indicates whether the external interrupt 13 wake-up is enabled or not
 // <id> eic_arch_wakeupen13
 #ifndef CONF_EIC_WAKEUPEN13
-#define CONF_EIC_WAKEUPEN13 0
+#define CONF_EIC_WAKEUPEN13 1
 #endif
 
 // <q> External Interrupt 13 Filter Enable
 // <i> Indicates whether the external interrupt 13 filter is enabled or not
 // <id> eic_arch_filten13
 #ifndef CONF_EIC_FILTEN13
-#define CONF_EIC_FILTEN13 0
+#define CONF_EIC_FILTEN13 1
 #endif
 
 // <y> Input 13 Sense Configuration
@@ -596,7 +596,7 @@
 // <i> This defines input sense trigger
 // <id> eic_arch_sense13
 #ifndef CONF_EIC_SENSE13
-#define CONF_EIC_SENSE13 EIC_NMICTRL_NMISENSE_NONE_Val
+#define CONF_EIC_SENSE13 EIC_NMICTRL_NMISENSE_LOW_Val
 #endif
 // </e>
 
@@ -644,28 +644,28 @@
 // <e> Interrupt 15 Settings
 // <id> eic_arch_enable_irq_setting15
 #ifndef CONF_EIC_ENABLE_IRQ_SETTING15
-#define CONF_EIC_ENABLE_IRQ_SETTING15 0
+#define CONF_EIC_ENABLE_IRQ_SETTING15 1
 #endif
 
 // <q> External Interrupt 15 Event Output Enable
 // <i> Indicates whether the external interrupt 15 event output is enabled or not
 // <id> eic_arch_extinteo15
 #ifndef CONF_EIC_EXTINTEO15
-#define CONF_EIC_EXTINTEO15 0
+#define CONF_EIC_EXTINTEO15 1
 #endif
 
 // <q> External Interrupt 15 Wake-up Enable
 // <i> Indicates whether the external interrupt 15 wake-up is enabled or not
 // <id> eic_arch_wakeupen15
 #ifndef CONF_EIC_WAKEUPEN15
-#define CONF_EIC_WAKEUPEN15 0
+#define CONF_EIC_WAKEUPEN15 1
 #endif
 
 // <q> External Interrupt 15 Filter Enable
 // <i> Indicates whether the external interrupt 15 filter is enabled or not
 // <id> eic_arch_filten15
 #ifndef CONF_EIC_FILTEN15
-#define CONF_EIC_FILTEN15 0
+#define CONF_EIC_FILTEN15 1
 #endif
 
 // <y> Input 15 Sense Configuration
@@ -678,12 +678,13 @@
 // <i> This defines input sense trigger
 // <id> eic_arch_sense15
 #ifndef CONF_EIC_SENSE15
-#define CONF_EIC_SENSE15 EIC_NMICTRL_NMISENSE_NONE_Val
+#define CONF_EIC_SENSE15 EIC_NMICTRL_NMISENSE_LOW_Val
 #endif
 // </e>
 
 #ifndef CONFIG_EIC_EXTINT_MAP
-#define CONFIG_EIC_EXTINT_MAP {5, PIN_PA05}, {6, PIN_PA06}, {9, PIN_PA09},
+#define CONFIG_EIC_EXTINT_MAP                                                                                          \
+	{5, PIN_PA05}, {6, PIN_PA06}, {8, PIN_PA28}, {9, PIN_PA09}, {13, PIN_PA25}, {15, PIN_PA27},
 #endif
 
 // <<< end of configuration section >>>

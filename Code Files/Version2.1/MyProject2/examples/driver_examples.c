@@ -32,7 +32,19 @@ static void button_on_PA06_pressed(void)
 {
 }
 
+static void button_on_PA28_pressed(void)
+{
+}
+
 static void button_on_PA09_pressed(void)
+{
+}
+
+static void button_on_PA25_pressed(void)
+{
+}
+
+static void button_on_PA27_pressed(void)
 {
 }
 
@@ -41,9 +53,13 @@ static void button_on_PA09_pressed(void)
  */
 void EXTERNAL_IRQ_0_example(void)
 {
+
 	ext_irq_register(PIN_PA05, button_on_PA05_pressed);
 	ext_irq_register(PIN_PA06, button_on_PA06_pressed);
+	ext_irq_register(PIN_PA28, button_on_PA28_pressed);
 	ext_irq_register(PIN_PA09, button_on_PA09_pressed);
+	ext_irq_register(PIN_PA25, button_on_PA25_pressed);
+	ext_irq_register(PIN_PA27, button_on_PA27_pressed);
 }
 
 static uint8_t src_data[128];

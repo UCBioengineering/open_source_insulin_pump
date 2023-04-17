@@ -39,7 +39,7 @@ void init_button_array()
 // cb function called when timer runs down. Checks a set of bools to see which button was
 // pressed and increments an array entry linked to that button. Array is checked in main.
 static void TIMER_0_task1_cb(const struct timer_task *const timer_task)
-{
+	{
 	if (button_1)
 	{
 		button_array[0]++;
@@ -112,6 +112,17 @@ void init_interrupts(void)
 	ext_irq_enable(BUTTON1);
 	ext_irq_enable(BUTTON2);
 	ext_irq_enable(BUTTON3);
+	
+	/*	CS 490 James	*/
+	ext_irq_disable(APS_BUTTON1);
+	ext_irq_disable(APS_BUTTON2);
+	ext_irq_disable(APS_BUTTON3);
+	ext_irq_register(APS_BUTTON2, button_2_cb);
+	ext_irq_register(APS_BUTTON1, button_1_cb);
+	ext_irq_register(APS_BUTTON3, button_3_cb);
+	ext_irq_enable(APS_BUTTON1);
+	ext_irq_enable(APS_BUTTON2);
+	ext_irq_enable(APS_BUTTON3);
 }
 
 void set_leds(uint8_t button_count)
